@@ -1,0 +1,62 @@
+{
+  "title": "Arrange Keys",
+  "name": "arrangekeys",
+  "version": "1.0.0",
+  "description": "Returns a copy of a JavaScript object with the keys arranged in a specified order. Useful for formatting JSON files.",
+  "homepage": "https://github.com/bevry/arrangekeys",
+  "keywords": [
+    "json",
+    "objects",
+    "keys"
+  ],
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true,
+    "gittip": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+  },
+  "author": "2014+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/bevry/arrangekeys/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bevry/arrangekeys.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "joe": "~1.4.0",
+    "joe-reporter-console": "~1.2.1",
+    "chai": "~1.9.1",
+    "projectz": "~0.3.11",
+    "biscotto": "^2.1.2"
+  },
+  "directories": {
+    "lib": "./out/lib"
+  },
+  "scripts": {
+    "test": "node ./out/test/arrangekeys-test.js",
+    "start": "node ./node_modules/coffee-script/bin/cake watch"
+  },
+  "main": "./out/lib/arrangekeys.js",
+  "cakeConfiguration": {
+    "COFFEE_SRC_PATH": "src",
+    "BISCOTTO_SRC_PATH": "src"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "title": "Arrange Keys",
   "name": "arrangekeys",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Returns a copy of a JavaScript object with the keys arranged in a specified order. Useful for formatting JSON files.",
   "homepage": "https://github.com/bevry/arrangekeys",
   "keywords": [
@@ -9,25 +9,40 @@
     "objects",
     "keys"
   ],
-  "license": {
-    "type": "MIT"
-  },
+  "license": "MIT",
   "badges": {
-    "travis": true,
-    "npm": true,
-    "david": true,
-    "daviddev": true,
-    "gittip": "bevry",
-    "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6",
-    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
-    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+    "list": [
+      "travisci",
+      "npmversion",
+      "npmdownloads",
+      "daviddm",
+      "daviddmdev",
+      "---",
+      "slackin",
+      "patreon",
+      "gratipay",
+      "flattr",
+      "paypal",
+      "bitcoin",
+      "wishlist"
+    ],
+    "config": {
+      "patreonUsername": "bevry",
+      "gratipayUsername": "bevry",
+      "flattrCode": "344188/balupton-on-Flattr",
+      "paypalURL": "https://bevry.me/paypal",
+      "bitcoinURL": "https://bevry.me/bitcoin",
+      "wishlistURL": "https://bevry.me/wishlist",
+      "slackinURL": "https://slack.bevry.me"
+    }
   },
   "author": "2014+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://balupton.com)"
   ],
-  "contributors": [],
+  "contributors": [
+    "Benjamin Lupton (http://balupton.com)"
+  ],
   "bugs": {
     "url": "https://github.com/bevry/arrangekeys/issues"
   },
@@ -36,26 +51,39 @@
     "url": "http://github.com/bevry/arrangekeys.git"
   },
   "engines": {
-    "node": ">=0.4"
+    "node": ">=0.12"
   },
-  "dependencies": {},
+  "browsers": true,
+  "main": "./esnextguardian.js",
+  "browser": "./es5/lib/arrangekeys.js",
+  "jspm": {
+    "main": "./es5/lib/arrangekeys.js"
+  },
+  "dependencies": {
+    "esnextguardian": "^1.2.0"
+  },
   "devDependencies": {
-    "coffee-script": "~1.7.1",
+    "assert-helpers": "^4.1.0",
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
     "joe": "~1.4.0",
     "joe-reporter-console": "~1.2.1",
-    "chai": "~1.9.1",
-    "projectz": "~0.3.11"
-  },
-  "directories": {
-    "lib": "./out/lib"
+    "projectz": "^1.0.0"
   },
   "scripts": {
-    "test": "node ./out/test/arrangekeys-test.js",
-    "start": "node ./node_modules/coffee-script/bin/cake watch"
+    "clean": "node --harmony nakefile.js clean",
+    "setup": "node --harmony nakefile.js setup",
+    "compile": "node --harmony nakefile.js compile",
+    "watch": "node --harmony nakefile.js watch",
+    "verify": "node --harmony nakefile.js verify",
+    "meta": "node --harmony nakefile.js meta",
+    "prepare": "node --harmony nakefile.js prepare",
+    "release": "node --harmony nakefile.js release",
+    "test": "node --harmony ./es5/test/arrangekeys-test.js"
   },
-  "main": "./out/lib/arrangekeys.js",
-  "cakeConfiguration": {
-    "COFFEE_SRC_PATH": "src",
-    "BISCOTTO_SRC_PATH": "src"
+  "nakeConfiguration": {
+    "BABEL_SRC_PATH": "esnext",
+    "ESLINT_SRC_PATH": "esnext"
   }
 }

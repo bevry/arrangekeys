@@ -1,24 +1,60 @@
-# Import
-{expect} = require('chai')
-joe = require('joe')
-arrangekeys = require('../../')
+'use strict'
 
-# Tests
-joe.describe 'arrangekeys', (describe, it) ->
+// Import
+const {deepEqual} = require('assert-helpers')
+const joe = require('joe')
+const arrangekeys = require('../../')
 
-	it 'should product the expected result', ->
-		input = {
-			a: 1
-			b: 2
-			c: 3
-			z: 4
+// Tests
+joe.describe('arrangekeys', function (describe, it) {
+	it('should product the expected result', function () {
+		const input = {
+			z: 1,
+			a: 2,
+			b: 3,
+			c: 4
 		}
-		expected = {
-			b: 2
-			c: 3
-			a: 1
-			z: 4
+		const expected = {
+			b: 3,
+			c: 4,
+			z: 1,
+			a: 2
 		}
-		output = arrangekeys(input, 'b c a')
+		const output = arrangekeys(input, 'b c')
+		deepEqual(output, expected, 'output was as expected')
+	})
 
-		expect(output).to.deep.equal(expected)
+	it('should product the expected result with sorting', function () {
+		const input = {
+			z: 1,
+			a: 2,
+			b: 3,
+			c: 4
+		}
+		const expected = {
+			b: 3,
+			c: 4,
+			a: 2,
+			z: 1
+		}
+		const output = arrangekeys(input, 'b c', true)
+		deepEqual(output, expected, 'output was as expected')
+	})
+
+	it('should product the expected result with only sorting', function () {
+		const input = {
+			z: 1,
+			a: 2,
+			b: 3,
+			c: 4
+		}
+		const expected = {
+			a: 2,
+			b: 3,
+			c: 4,
+			z: 1
+		}
+		const output = arrangekeys(input)
+		deepEqual(output, expected, 'output was as expected')
+	})
+})

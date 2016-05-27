@@ -1,5 +1,3 @@
-'use strict'
-
 // Define
 function arrangekeys (data, keys, sort = false) {
 	// Prepare

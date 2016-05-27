@@ -1,9 +1,7 @@
-'use strict'
-
 // Import
 const {deepEqual} = require('assert-helpers')
 const joe = require('joe')
-const arrangekeys = require('../../')
+const arrangekeys = require('../')
 
 // Tests
 joe.describe('arrangekeys', function (describe, it) {

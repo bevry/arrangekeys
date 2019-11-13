@@ -3,7 +3,7 @@
 // Import
 const { deepEqual } = require('assert-helpers')
 const kava = require('kava')
-const arrangekeys = require('../')
+const arrangekeys = require('./')
 
 // Tests
 kava.describe('arrangekeys', function(describe, it) {

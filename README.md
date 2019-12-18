@@ -35,12 +35,12 @@ Returns a copy of a JavaScript object with the keys arranged in a specified orde
 
 ## Usage
 
-
-
 ```javascript
+import arrangeKeys from 'arrangekeys'
+
 // Arrange the keys of the input so that keys "b" and "c" are first
 console.log(
-    require('arrangekeys')(
+    arrangeKeys(
         {
             z: 1,
             a: 2,
@@ -58,7 +58,7 @@ console.log(
 
 // Arrange the keys of the input so that keys "b" and "c" are first, with the rest alphabetically sorted
 console.log(
-    require('arrangekeys')(
+    arrangeKeys(
         {
             z: 1,
             a: 2,
@@ -77,7 +77,7 @@ console.log(
 
 // Arrange the keys to be alphabetically sorted
 console.log(
-    require('arrangekeys')({
+    arrangeKeys({
         z: 1,
         a: 2,
         b: 3,
@@ -108,7 +108,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/arrangekeys/^3.0.0'
+    import pkg from '//cdn.pika.dev/arrangekeys/^3.0.1'
 </script>
 ```
 
@@ -116,7 +116,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/arrangekeys@^3.0.0'
+    import pkg from '//unpkg.com/arrangekeys@^3.0.1'
 </script>
 ```
 
@@ -124,7 +124,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/arrangekeys@3.0.0'
+    import pkg from '//dev.jspm.io/arrangekeys@3.0.1'
 </script>
 ```
 

@@ -1,5 +1,9 @@
 # History
 
+## v3.0.1 2019 December 18
+
+-   Fixed `README.md` example (regression since v3.0.0)
+
 ## v3.0.0 2019 December 18
 
 -   Converted from JavaScript to TypeScript

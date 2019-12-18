@@ -8,7 +8,7 @@ type IndexedObject = { [key: string]: any }
  * @param sort If true, the remaining keys are sorted.
  * @returns The arranged object.
  */
-export default function arrangekeys<T extends IndexedObject>(
+export default function arrangeKeys<T extends IndexedObject>(
 	subject: T,
 	keys?: string[] | string | false,
 	sort?: boolean

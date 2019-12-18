@@ -1,7 +1,7 @@
 {
   "title": "Arrange Keys",
   "name": "arrangekeys",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Returns a copy of a JavaScript object with the keys arranged in a specified order. Useful for formatting JSON files.",
   "homepage": "https://github.com/bevry/arrangekeys",
   "license": "MIT",

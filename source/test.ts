@@ -1,13 +1,11 @@
-'use strict'
-
 // Import
-const { deepEqual } = require('assert-helpers')
-const kava = require('kava')
-const arrangekeys = require('./')
+import { deepEqual } from 'assert-helpers'
+import kava from 'kava'
+import arrangekeys from './'
 
 // Tests
-kava.describe('arrangekeys', function(describe, it) {
-	it('should product the expected result', function() {
+kava.suite('arrangekeys', function(suite, test) {
+	test('should product the expected result', function() {
 		const input = {
 			z: 1,
 			a: 2,
@@ -24,7 +22,7 @@ kava.describe('arrangekeys', function(describe, it) {
 		deepEqual(output, expected, 'output was as expected')
 	})
 
-	it('should product the expected result with sorting', function() {
+	test('should product the expected result with sorting', function() {
 		const input = {
 			z: 1,
 			a: 2,
@@ -41,7 +39,7 @@ kava.describe('arrangekeys', function(describe, it) {
 		deepEqual(output, expected, 'output was as expected')
 	})
 
-	it('should product the expected result with only sorting', function() {
+	test('should product the expected result with only sorting', function() {
 		const input = {
 			z: 1,
 			a: 2,

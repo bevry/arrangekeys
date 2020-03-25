@@ -35,6 +35,8 @@ Returns a copy of a JavaScript object with the keys arranged in a specified orde
 
 ## Usage
 
+[Complete API Documentation.](http://master.arrangekeys.bevry.surge.sh/docs/globals.html)
+
 ```javascript
 import arrangeKeys from 'arrangekeys'
 
@@ -45,7 +47,7 @@ console.log(
             z: 1,
             a: 2,
             b: 3,
-            c: 4
+            c: 4,
         },
         'b c'
     )
@@ -63,7 +65,7 @@ console.log(
             z: 1,
             a: 2,
             b: 3,
-            c: 4
+            c: 4,
         },
         'b c',
         true
@@ -81,7 +83,7 @@ console.log(
         z: 1,
         a: 2,
         b: 3,
-        c: 4
+        c: 4,
     })
 ) /* {
 	a: 2,
@@ -90,8 +92,6 @@ console.log(
 	z: 1
 } */
 ```
-
-[Complete API Documentation.](http://master.arrangekeys.bevry.surge.sh/docs/)
 
 <!-- INSTALL/ -->
 
@@ -108,7 +108,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/arrangekeys/^3.0.1'
+    import pkg from '//cdn.pika.dev/arrangekeys/^4.0.0'
 </script>
 ```
 
@@ -116,7 +116,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/arrangekeys@^3.0.1'
+    import pkg from '//unpkg.com/arrangekeys@^4.0.0'
 </script>
 ```
 
@@ -124,7 +124,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/arrangekeys@3.0.1'
+    import pkg from '//dev.jspm.io/arrangekeys@4.0.0'
 </script>
 ```
 

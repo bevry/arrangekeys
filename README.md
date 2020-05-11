@@ -108,7 +108,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/arrangekeys/^4.1.0'
+    import pkg from '//cdn.pika.dev/arrangekeys/^4.2.0'
 </script>
 ```
 
@@ -116,7 +116,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/arrangekeys@^4.1.0'
+    import pkg from '//unpkg.com/arrangekeys@^4.2.0'
 </script>
 ```
 
@@ -124,7 +124,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/arrangekeys@4.1.0'
+    import pkg from '//dev.jspm.io/arrangekeys@4.2.0'
 </script>
 ```
 
@@ -166,7 +166,7 @@ console.log(
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/arrangekeys/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/arrangekeys">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/arrangekeys/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/arrangekeys">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -186,8 +186,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/arrangekeys/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/arrangekeys">view contributions</a></li>
-<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/arrangekeys/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/arrangekeys">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/arrangekeys/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/arrangekeys">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/arrangekeys/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

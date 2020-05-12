@@ -108,7 +108,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/arrangekeys/^4.2.0'
+    import pkg from '//cdn.pika.dev/arrangekeys/^4.3.0'
 </script>
 ```
 
@@ -116,7 +116,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/arrangekeys@^4.2.0'
+    import pkg from '//unpkg.com/arrangekeys@^4.3.0'
 </script>
 ```
 
@@ -124,7 +124,7 @@ console.log(
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/arrangekeys@4.2.0'
+    import pkg from '//dev.jspm.io/arrangekeys@4.3.0'
 </script>
 ```
 

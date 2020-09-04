@@ -1,7 +1,7 @@
 // Import
 import { deepEqual } from 'assert-helpers'
 import kava from 'kava'
-import arrangekeys from './'
+import arrangekeys from './index.js'
 
 // Tests
 kava.suite('arrangekeys', function (suite, test) {

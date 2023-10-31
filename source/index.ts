@@ -11,7 +11,7 @@ type IndexedObject = { [key: string]: any }
 export default function arrangeKeys<T extends IndexedObject>(
 	subject: T,
 	keys?: string[] | string | false,
-	sort?: boolean
+	sort?: boolean,
 ): T {
 	// Prepare
 	const result: IndexedObject = {}
